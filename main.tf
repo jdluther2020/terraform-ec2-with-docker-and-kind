@@ -1,4 +1,13 @@
+#
+# Terraform IaC to create an EC2 instance with Docker and KIND enabled Kubernetes cluster.
+# Reference - https://medium.com/the-aws-way/the-aws-way-iac-in-action-a-docker-and-kind-ready-amazon-ec2-node-a0e2d907f9ec
+# Three essential commands to get started. For more see blog above.
+# 1. git clone git clone https://github.com/jdluther2020/terraform-ec2-with-docker-and-kind.git
+# 2. terraform apply -auto-approve -var my_ip=$(curl -s ifconfig.me)
+# 3. terraform apply -destroy -var my_ip=$(curl -s ifconfig.me)
+#
 # Terraform AWS Provider - https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+#
 terraform {
   required_providers {
     aws = {

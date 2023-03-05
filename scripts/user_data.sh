@@ -69,4 +69,7 @@ kubectl get nodes
 chown -R ec2-user.ec2-user $CLUSTER_DIR
 mv $CLUSTER_DIR/.kube $EC2_USER_HOME
 
+# Clone https://github.com/jdluther2020/jdluther-kubernetes-io-tasks
+cd $EC2_USER_HOME && git clone https://github.com/jdluther2020/jdluther-kubernetes-io-tasks.git
+
 reboot
