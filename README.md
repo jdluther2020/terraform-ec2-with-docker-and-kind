@@ -3,7 +3,7 @@ For step by step instruction on how to use this code repo, please visit the asso
 
 ##  Three essential commands to get started. For more see blog above.
 ```
-REPO=terraform-ec2-with-docker-and-kind && git clone https://github.com/jdluther2020/$REPO.git && cd $REPO```
+REPO=terraform-ec2-with-docker-and-kind && git clone https://github.com/jdluther2020/$REPO.git && cd $REPO
 
 terraform init && terraform apply -auto-approve -var my_ip=$(curl -s ifconfig.me)
 
