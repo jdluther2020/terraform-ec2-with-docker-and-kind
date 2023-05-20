@@ -5,7 +5,7 @@ For step by step instruction on how to use this code repo, please visit the asso
 ```
 # Make sure 'aws configure' has run and connectivity to AWS account is working.
 REPO=terraform-ec2-with-docker-and-kind && \
-    rm -rf $REPO \
+    rm -rf $REPO && \
     git clone https://github.com/jdluther2020/$REPO.git && \
     cd $REPO
 
