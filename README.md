@@ -4,14 +4,18 @@ For step by step instruction on how to use this code repo, please visit the asso
 ##  Three essential commands to get started. For more see blog above.
 ```
 # Make sure 'aws configure' has run and connectivity to AWS account is working.
+aws sts get-caller-identity
+
+# Clone repo
 REPO=terraform-ec2-with-docker-and-kind && \
     rm -rf $REPO && \
     git clone https://github.com/jdluther2020/$REPO.git && \
     cd $REPO
 
+# Build cluster
 terraform init && terraform apply -auto-approve -var my_ip=$(curl -s ifconfig.me)
 
-# Final clearn up step
+# Delete cluster as final clearn up step
 terraform apply -destroy -var my_ip=$(curl -s ifconfig.me)
 ```
 
